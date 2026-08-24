@@ -31,6 +31,28 @@ app.use((req, res, next) => {
 
 app.get("/", (req, res) => res.send("Server is live!"));
 
+// System Health Check Endpoint
+app.get("/api/health", async (req, res) => {
+    const startTime = Date.now();
+    let dbStatus = "connected";
+    try {
+        const prismaModule = await import("./configs/prisma.js");
+        await prismaModule.default.$queryRaw`SELECT 1`;
+    } catch (err) {
+        dbStatus = `disconnected (${err.message})`;
+    }
+
+    res.json({
+        status: dbStatus === "connected" ? "healthy" : "degraded",
+        uptimeSeconds: Math.floor(process.uptime()),
+        timestamp: new Date().toISOString(),
+        database: dbStatus,
+        responseTimeMs: Date.now() - startTime,
+        environment: process.env.NODE_ENV || "development",
+        version: "1.0.0"
+    });
+});
+
 // Webhooks
 app.use(
     "/api/inngest",
