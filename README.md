@@ -6,7 +6,7 @@
 
 ### ✨ Empowering Innovation by Connecting Founders and Investors on One Platform
 
-[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-the--venture--hub.vercel.app-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://the-venture-hub.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/🌐%20Live%20Demo-venture--hubb.vercel.app-10B981?style=for-the-badge&logo=vercel&logoColor=white)](https://venture-hubb.vercel.app/)
 [![Backend API](https://img.shields.io/badge/⚙️%20Backend-Render%20Live-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://venturehub-server.onrender.com)
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org)
@@ -24,7 +24,7 @@
 
 Unlike traditional single-role platforms, VentureHUB provides a **role-flexible ecosystem** where every user can seamlessly transition between launching startups and investing in promising ventures.
 
-> **🌐 Live Frontend:** [https://the-venture-hub.vercel.app/](https://the-venture-hub.vercel.app/)  
+> **🌐 Live Frontend:** [https://venture-hubb.vercel.app/](https://venture-hubb.vercel.app/)  
 > **⚙️ Live Backend:** [https://venturehub-server.onrender.com](https://venturehub-server.onrender.com)
 
 ---
@@ -39,7 +39,7 @@ Unlike traditional single-role platforms, VentureHUB provides a **role-flexible 
                                     ▼
                ┌─────────────────────────────────────────┐
                │    Vercel (React 19 + Vite Frontend)    │
-               │    https://the-venture-hub.vercel.app   │
+               │    https://venture-hubb.vercel.app      │
                └────────────────────┬────────────────────┘
                                     │  HTTPS / REST API
                                     ▼
@@ -229,14 +229,14 @@ npm run dev
 4. Set **Start Command**: `npm start`
 5. Add all variables from `server/.env.example` under **Environment Variables**.
 
-### Frontend → Vercel (`https://the-venture-hub.vercel.app/`)
-1. Create a New Project on [vercel.com](https://vercel.com) connected to repo `bhanuteja7781/VentureHUB`.
+### Frontend → Vercel (`https://venture-hubb.vercel.app/`)
+1. Create a New Project on [vercel.com](https://vercel.com) connected to repo `neerajnsk9/VentureHUB`.
 2. Set **Root Directory**: `client`
 3. Framework: **Vite** | Build Command: `npm run build` | Output Directory: `dist`
 4. Add environment variables:
    - `VITE_BACKEND_URL` = `https://venturehub-server.onrender.com`
    - `VITE_CLERK_PUBLISHABLE_KEY` = `pk_test_...`
-   - `VITE_ADMIN_EMAILS` = `admin@venturehub.com,youremail@gmail.com`
+   - `VITE_ADMIN_EMAILS` = `admin@venturehub.com,chaiss917@gmail.com,neerajchowdary1@gmail.com`
 
 ---
 
