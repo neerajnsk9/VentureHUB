@@ -7,6 +7,7 @@
     "build": "prisma generate",
     "postinstall": "prisma generate",
     "seed": "node prisma/seed.js",
+    "stats": "node scripts/dbStats.js",
     "reset": "node prisma/reset.js",
     "server": "nodemon server.js",
     "start": "node index.js"
