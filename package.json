@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "description": "VentureHUB — Startup Marketplace for Founders & Investors",
+  "workspaces": [
+    "client"
+  ],
   "scripts": {
     "dev": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"npm run server --prefix server\" \"npm run dev --prefix client\"",
     "dev:clean": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"node server/index.js\" \"npm run dev --prefix client\"",
