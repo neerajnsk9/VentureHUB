@@ -1,0 +1,56 @@
+# ─── Dependencies ────────────────────────────────────────────────────────────
+node_modules/
+.pnpm-store/
+
+# ─── Build & Dist Outputs ────────────────────────────────────────────────────
+dist/
+dist-ssr/
+build/
+*.local
+
+# ─── Environment Variables (NEVER commit these) ───────────────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+# Allow only example templates
+!.env.example
+
+# ─── Logs ────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ─── Prisma ──────────────────────────────────────────────────────────────────
+prisma/migrations/dev.db
+prisma/*.db
+
+# ─── Editor & OS ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Temp & Upload ───────────────────────────────────────────────────────────
+uploads/
+postgres_data/
+tmp/
+temp/
+
+# ─── Package lock (keep only one) ────────────────────────────────────────────
+# Uncomment if you use yarn or pnpm exclusively
+# package-lock.json

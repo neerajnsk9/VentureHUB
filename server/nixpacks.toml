@@ -1,0 +1,8 @@
+# Railway Nixpacks build configuration for VentureHUB Backend
+# https://docs.railway.app/guides/build-configuration
+
+[phases.build]
+cmds = ["npm install", "npx prisma generate"]
+
+[start]
+cmd = "node index.js"

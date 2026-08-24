@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
+
+* {
+  font-family: "Rethink Sans", sans-serif;
+}
+
+@import "tailwindcss";
+
+:root {
+  --brand-purple: #702371;
+  --brand-magenta: #a11c5e;
+  --brand-dark: #442077;
+  --brand-pink-light: #fdf2f8;
+}
+
+/* Global Selection */
+::selection {
+  background-color: #a11c5e;
+  color: #ffffff;
+}
+
+/* Global Cursors & Click Active Feedback */
+button, a, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+button:active, a:active, [role="button"]:active {
+  transform: scale(0.97);
+}
+
+/* Brand Utility Classes */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, #702371 0%, #a11c5e 60%, #442077 100%);
+}
+
+.text-brand-gradient {
+  background: linear-gradient(135deg, #702371 0%, #a11c5e 60%, #442077 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-brand-purple {
+  background-color: #702371;
+}
+
+/* Select & Dropdown Styling */
+select {
+  cursor: pointer;
+}
+
+select:focus {
+  border-color: #cbd5e1 !important;
+  outline: none !important;
+}
+
+/* Input Accent & Focus Colors */
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"] {
+  accent-color: #a11c5e !important;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #a11c5e !important;
+  box-shadow: 0 0 0 3px rgba(161, 28, 94, 0.2) !important;
+}
+
+/* Spinners & Loading Symbols matching Logo Magenta */
+.animate-spin {
+  color: #a11c5e !important;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.cl-drawerRoot {
+  z-index: 100;
+}
+
+/* Make Clerk profile button visibly larger and styled with brand colors */
+.cl-userButtonTrigger,
+.cl-userButtonAvatarBox,
+.cl-avatarBox,
+.cl-userPreviewAvatarBox {
+  width: 3rem !important;
+  height: 3rem !important;
+  min-width: 3rem !important;
+  min-height: 3rem !important;
+  border-radius: 9999px !important;
+  background: linear-gradient(135deg, #702371 0%, #a11c5e 100%) !important;
+  box-shadow: 0 4px 12px rgba(161, 28, 94, 0.2) !important;
+}
+
+.cl-avatarImage {
+  border-radius: 9999px !important;
+}
+
+.cl-userButtonTrigger:focus-visible,
+.cl-userButtonTrigger:focus {
+  outline: 2px solid #a11c5e !important;
+  box-shadow: 0 0 0 4px rgba(161, 28, 94, 0.2) !important;
+}
+
+.cl-userButtonPopoverCard {
+  border: 1px solid #fbcfe8 !important;
+  box-shadow: 0 10px 30px -5px rgba(112, 35, 113, 0.2) !important;
+  z-index: 200 !important;
+}
+
+.cl-userButtonPopoverActionButtonIcon {
+  color: #a11c5e !important;
+}
+
+@media (min-width: 768px) {
+  .cl-userButtonTrigger,
+  .cl-userButtonAvatarBox,
+  .cl-avatarBox,
+  .cl-userPreviewAvatarBox {
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    min-width: 3.5rem !important;
+    min-height: 3.5rem !important;
+  }
+}

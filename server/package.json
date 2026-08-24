@@ -1,0 +1,42 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "prisma generate",
+    "postinstall": "prisma generate",
+    "seed": "node prisma/seed.js",
+    "reset": "node prisma/reset.js",
+    "server": "nodemon server.js",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@clerk/express": "^1.7.58",
+    "@imagekit/nodejs": "^7.1.1",
+    "@neondatabase/serverless": "^1.0.2",
+    "@prisma/adapter-neon": "^6.19.1",
+    "@prisma/client": "^6.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "imagekit": "^6.0.0",
+    "inngest": "^4.14.0",
+    "multer": "^2.0.2",
+    "nodemailer": "^7.0.11",
+    "stripe": "^20.1.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "nodemon": "^3.1.11",
+    "prisma": "^6.19.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
