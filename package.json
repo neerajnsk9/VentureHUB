@@ -1,0 +1,17 @@
+{
+  "name": "venturehub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "VentureHUB — Startup Marketplace for Founders & Investors",
+  "scripts": {
+    "dev": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"npm run server --prefix server\" \"npm run dev --prefix client\"",
+    "dev:clean": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"node server/index.js\" \"npm run dev --prefix client\"",
+    "start": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"npm start --prefix server\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "seed": "npm run seed --prefix server",
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
