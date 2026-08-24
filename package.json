@@ -7,7 +7,7 @@
     "dev": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"npm run server --prefix server\" \"npm run dev --prefix client\"",
     "dev:clean": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"node server/index.js\" \"npm run dev --prefix client\"",
     "start": "concurrently -k -n \"SERVER,CLIENT\" -c \"cyan.bold,magenta.bold\" \"npm start --prefix server\" \"npm run dev --prefix client\"",
-    "build": "npm run build --prefix client && npm run build --prefix server",
+    "build": "npm run build --prefix client",
     "seed": "npm run seed --prefix server",
     "stats": "npm run stats --prefix server",
     "install:all": "npm install && npm install --prefix server && npm install --prefix client"
