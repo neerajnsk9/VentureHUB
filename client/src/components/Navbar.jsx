@@ -11,8 +11,8 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     const userEmail = user?.emailAddresses?.[0]?.emailAddress;
-    const adminEmails = (import.meta.env.VITE_ADMIN_EMAILS || 'bhanuteja7771@gmail.com').split(',').map(e => e.trim().toLowerCase());
-    const isAdminUser = userEmail && (adminEmails.includes(userEmail.toLowerCase()) || userEmail.toLowerCase() === 'bhanuteja7771@gmail.com');
+    const adminEmails = (import.meta.env.VITE_ADMIN_EMAILS || '').split(',').map(e => e.trim().toLowerCase()).filter(Boolean);
+    const isAdminUser = userEmail && adminEmails.includes(userEmail.toLowerCase());
 
     if (!isLoaded) {
         return <nav className='h-20' />;
