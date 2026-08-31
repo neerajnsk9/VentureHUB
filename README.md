@@ -142,7 +142,7 @@ VentureHUB/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/bhanuteja7781/VentureHUB.git
+git clone https://github.com/neerajnsk9/VentureHUB.git
 cd VentureHUB
 ```
 
@@ -223,7 +223,7 @@ npm run dev
 ## 🚀 Production Deployment Guide
 
 ### Backend → Render (`https://venturehub-server.onrender.com`)
-1. Create a Web Service on [render.com](https://render.com) connected to repo `bhanuteja7781/VentureHUB`.
+1. Create a Web Service on [render.com](https://render.com) connected to repo `neerajnsk9/VentureHUB`.
 2. Set **Root Directory**: `server`
 3. Set **Build Command**: `npm install && npx prisma generate`
 4. Set **Start Command**: `npm start`
@@ -263,7 +263,7 @@ Contributions are welcome! Please follow these steps:
 
 ## 📄 License
 
-This project is licensed under the **ISC License** © [Bhanu Teja](https://github.com/bhanuteja7781).
+This project is licensed under the **ISC License** © [Neeraj Sai Kumar](https://github.com/neerajnsk9).
 
 <div align="center">
 
